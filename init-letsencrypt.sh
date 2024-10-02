@@ -7,7 +7,8 @@
 email="carrismetropolitana@gmail.com"
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
-api_domain=proxy.api.app.navegante.carrismetropolitana.pt # The primary domain
+api_domain_1=proxy.api.app.navegante.carrismetropolitana.pt # The primary domain
+api_domain_2=api.app.navegante.pt
 
 
 # # #
@@ -22,9 +23,9 @@ curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/c
 curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot/certbot/ssl-dhparams.pem > "./letsencrypt/ssl-dhparams.pem"
 echo
 
-echo ">>> Creating dummy certificate for "$api_domain"..."
-mkdir -p "./letsencrypt/live/$api_domain"
-docker compose run --rm --entrypoint "openssl req -x509 -nodes -newkey rsa:4096 -days 1 -keyout '/etc/letsencrypt/live/$api_domain/privkey.pem' -out '/etc/letsencrypt/live/$api_domain/fullchain.pem' -subj '/CN=localhost'" certbot
+echo ">>> Creating dummy certificate for "$api_domain_1"..."
+mkdir -p "./letsencrypt/live/$api_domain_1"
+docker compose run --rm --entrypoint "openssl req -x509 -nodes -newkey rsa:4096 -days 1 -keyout '/etc/letsencrypt/live/$api_domain_1/privkey.pem' -out '/etc/letsencrypt/live/$api_domain_1/fullchain.pem' -subj '/CN=localhost'" certbot
 echo
 
 echo ">>> Rebuilding nginx ..."
@@ -35,15 +36,15 @@ echo
 # # #
 # API
 
-echo ">>> Preparing for "$api_domain"..."
+echo ">>> Preparing for "$api_domain_1" and "$api_domain_2" ..."
 
 echo ">>> Deleting dummy certificate..."
-docker compose run --rm --entrypoint "rm -Rf /etc/letsencrypt/live/$api_domain && rm -Rf /etc/letsencrypt/archive/$api_domain && rm -Rf /etc/letsencrypt/renewal/$api_domain.conf" certbot
+docker compose run --rm --entrypoint "rm -Rf /etc/letsencrypt/live/$api_domain_1 && rm -Rf /etc/letsencrypt/archive/$api_domain_1 && rm -Rf /etc/letsencrypt/renewal/$api_domain_1.conf" certbot
 echo
 
-echo ">>> Requesting Let's Encrypt certificate for "$api_domain"..."
+echo ">>> Requesting Let's Encrypt certificate for "$api_domain_1"..."
 if [ $staging != "0" ]; then staging_arg="--staging"; fi # Enable staging mode if needed
-docker compose run --rm --entrypoint "certbot certonly --webroot -w /var/www/certbot $staging_arg -d $api_domain --email $email --rsa-key-size 4096 --agree-tos --noninteractive --verbose --force-renewal" certbot
+docker compose run --rm --entrypoint "certbot certonly --webroot -w /var/www/certbot $staging_arg -d $api_domain_1 -d $api_domain_2 --email $email --rsa-key-size 4096 --agree-tos --noninteractive --verbose --force-renewal" certbot
 echo
 
 

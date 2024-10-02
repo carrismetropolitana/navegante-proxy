@@ -83,7 +83,7 @@ services:
   # # # # # # # # # # # # # # # # # # # # #
 
   server:
-    image: ghcr.io/carrismetropolitana/navegante-proxy:production
+    image: ghcr.io/carrismetropolitana/navegante-proxy-server:production
     deploy:
       restart_policy:
         condition: on-failure
