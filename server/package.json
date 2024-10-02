@@ -1,0 +1,23 @@
+{
+	"name": "@carrismetropolitana/navegante-proxy",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc && resolve-tspaths",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"start": "tsc && resolve-tspaths && node dist/index.js",
+		"watch": "tsc -w"
+	},
+	"dependencies": {
+		"fastify": "5.0.0"
+	},
+	"devDependencies": {
+		"@carrismetropolitana/eslint": "20241001.1357.32",
+		"@types/node": "22.7.4",
+		"resolve-tspaths": "0.8.22",
+		"typescript": "5.6.2"
+	}
+}
