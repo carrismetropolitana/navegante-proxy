@@ -1,4 +1,4 @@
 /* * */
 
-import 'production.js';
-import 'development.js';
+import './development.js';
+import './production.js';
