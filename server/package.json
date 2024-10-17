@@ -15,7 +15,6 @@
 		"fastify": "5.0.0"
 	},
 	"devDependencies": {
-		"@carrismetropolitana/eslint": "20241014.1938.30",
 		"@types/node": "22.7.6",
 		"resolve-tspaths": "0.8.22",
 		"typescript": "5.6.3"
