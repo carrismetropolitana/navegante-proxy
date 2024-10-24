@@ -31,12 +31,5 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 				message_url: 'https://alpha.carrismetropolitana.pt/app-ios/startup/message-1',
 				presentation_type: 'breaking',
 			},
-			{
-				build_max: 1,
-				build_min: 2,
-				message_id: 'PROD-IOS-0005',
-				message_url: 'https://alpha.carrismetropolitana.pt/app-ios/startup/message-1',
-				presentation_type: 'changelog',
-			},
 		]);
 });
