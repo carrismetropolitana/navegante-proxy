@@ -4,7 +4,7 @@ import FASTIFY from '@/services/FASTIFY.js';
 
 /* * */
 
-FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
+FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 	return reply
 		.code(200)
 		.header('Content-Type', 'application/json; charset=utf-8')
@@ -26,7 +26,7 @@ FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
 		]);
 });
 
-FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
+FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 	return reply
 		.code(200)
 		.header('Content-Type', 'application/json; charset=utf-8')
