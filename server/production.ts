@@ -14,7 +14,7 @@ FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
 				build_min: null,
 				message_id: 'PROD-ANDROID-0082',
 				message_url: 'https://cmet.pt/app-navegante-android/startup/default',
-				presentation_type: 'breaking',
+				presentation_type: 'changelog',
 			},
 		]);
 });
@@ -29,7 +29,7 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 				build_min: null,
 				message_id: 'PROD-IOS-0082',
 				message_url: 'https://cmet.pt/app-navegante-ios/startup/default',
-				presentation_type: 'breaking',
+				presentation_type: 'changelog',
 			},
 		]);
 });
