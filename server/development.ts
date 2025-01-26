@@ -25,7 +25,7 @@ FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 1,
+				build_max: 38,
 				build_min: null,
 				message_id: 'DEV-IOS-20250115',
 				message_url: 'https://www.carrismetropolitana.pt/app-navegante-ios/startup/20250115',
