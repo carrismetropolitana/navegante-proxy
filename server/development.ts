@@ -10,7 +10,7 @@ FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 38,
+				build_max: 41,
 				build_min: null,
 				message_id: 'DEV-ANDROID-20250115',
 				message_url: 'https://www.carrismetropolitana.pt/app-navegante-android/startup/20250115',
@@ -18,10 +18,10 @@ FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 			},
 			{
 				build_max: null,
-				build_min: 39,
+				build_min: 42,
 				message_id: 'DEV-ANDROID-nao-aumenta-2025',
 				message_url: 'https://www.carrismetropolitana.pt/app-navegante-android/startup/nao-aumenta-2025',
-				presentation_type: 'breaking',
+				presentation_type: 'changelog',
 			},
 		]);
 });
@@ -43,7 +43,7 @@ FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 				build_min: 39,
 				message_id: 'DEV-IOS-nao-aumenta-2025',
 				message_url: 'https://www.carrismetropolitana.pt/app-navegante-ios/startup/nao-aumenta-2025',
-				presentation_type: 'breaking',
+				presentation_type: 'changelog',
 			},
 		]);
 });
