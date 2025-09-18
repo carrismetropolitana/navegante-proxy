@@ -10,9 +10,9 @@ FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 41,
+				build_max: 74,
 				build_min: null,
-				message_id: 'ANDROID-20250115',
+				message_id: 'ANDROID-20250918',
 				message_url: 'https://carrismetropolitana.pt/app-navegante-android/startup/20250115',
 				presentation_type: 'breaking',
 			},
@@ -32,9 +32,9 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 38,
+				build_max: 81,
 				build_min: null,
-				message_id: 'IOS-20250115',
+				message_id: 'IOS-20250918',
 				message_url: 'https://carrismetropolitana.pt/app-navegante-ios/startup/20250115',
 				presentation_type: 'breaking',
 			},
