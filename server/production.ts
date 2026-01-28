@@ -10,10 +10,10 @@ FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 74,
+				build_max: 90,
 				build_min: null,
-				message_id: 'ANDROID-20250918',
-				message_url: 'https://carrismetropolitana.pt/app-navegante-android/startup/20250115',
+				message_id: 'ANDROID-20260128',
+				message_url: 'https://pcgi.tmlmobilidade.pt/app-navegante-android/startup/20260127',
 				presentation_type: 'breaking',
 			},
 			// {
@@ -32,10 +32,10 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 81,
+				build_max: 89,
 				build_min: null,
-				message_id: 'IOS-20250918',
-				message_url: 'https://carrismetropolitana.pt/app-navegante-ios/startup/20250115',
+				message_id: 'IOS-20260128',
+				message_url: 'https://pcgi.tmlmobilidade.pt/app-navegante-ios/startup/20260127',
 				presentation_type: 'breaking',
 			},
 			// {
