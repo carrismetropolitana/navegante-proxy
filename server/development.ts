@@ -32,10 +32,10 @@ FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 38,
+				build_max: 93,
 				build_min: null,
-				message_id: 'DEV-IOS-20250115',
-				message_url: 'https://carrismetropolitana.pt/app-navegante-ios/startup/20250115',
+				message_id: 'DEV-IOS-20260128',
+				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-ios/startup/20260127',
 				presentation_type: 'breaking',
 			},
 			{
