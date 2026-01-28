@@ -10,6 +10,13 @@ FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
+				build_max: 90,
+				build_min: null,
+				message_id: 'DEV-ANDROID-20260127',
+				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-android/startup/20260127',
+				presentation_type: 'breaking',
+			},
+			{
 				build_max: 41,
 				build_min: null,
 				message_id: 'DEV-ANDROID-20250115',
