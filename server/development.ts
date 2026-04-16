@@ -40,9 +40,9 @@ FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 			},*/
 			{
 				build_max: null,
-				build_min: 39,
-				message_id: 'DEV-IOS-nao-aumenta-2025',
-				message_url: 'https://carrismetropolitana.pt/app-navegante-ios/startup/nao-aumenta-2025',
+				build_min: 113,
+				message_id: 'DEV-IOS-rir-2026',
+				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-ios/startup/rock-in-rio-2026',
 				presentation_type: 'changelog',
 			},
 		]);
