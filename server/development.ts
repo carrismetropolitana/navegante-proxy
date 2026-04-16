@@ -18,7 +18,7 @@ FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 			},*/
 			{
 				build_max: null,
-				build_min: 100,
+				build_min: 103,
 				message_id: 'DEV-navegante-rir-2026',
 				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-android/startup/rock-in-rio-2026',
 				presentation_type: 'changelog',
