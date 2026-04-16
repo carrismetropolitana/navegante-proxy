@@ -18,9 +18,9 @@ FASTIFY.server.get('/dev/android/v1/startup/message', async (_, reply) => {
 			},*/
 			{
 				build_max: null,
-				build_min: 42,
-				message_id: 'DEV-ANDROID-nao-aumenta-2025',
-				message_url: 'https://carrismetropolitana.pt/app-navegante-android/startup/nao-aumenta-2025',
+				build_min: 100,
+				message_id: 'DEV-navegante-rir-2026',
+				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-android/startup/rock-in-rio-2026',
 				presentation_type: 'changelog',
 			},
 		]);
@@ -40,8 +40,8 @@ FASTIFY.server.get('/dev/ios/v1/startup/message', async (_, reply) => {
 			},*/
 			{
 				build_max: null,
-				build_min: 113,
-				message_id: 'DEV-IOS-rir-2026',
+				build_min: 100,
+				message_id: 'DEV-navegante-rir-2026',
 				message_url: 'https://pcgi-stg.tmlmobilidade.pt/app-navegante-ios/startup/rock-in-rio-2026',
 				presentation_type: 'changelog',
 			},
