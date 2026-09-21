@@ -13,7 +13,7 @@ FASTIFY.server.get('/android/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 103,
+				build_max: 104,
 				build_min: null,
 				message_id: 'ANDROID-20260128',
 				message_url: 'https://pcgi.tmlmobilidade.pt/app-navegante-android/startup/20260127',
@@ -35,7 +35,7 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 99,
+				build_max: 100,
 				build_min: null,
 				message_id: 'IOS-20260128',
 				message_url: 'https://pcgi.tmlmobilidade.pt/app-navegante-ios/startup/20260127',
