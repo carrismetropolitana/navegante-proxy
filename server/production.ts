@@ -35,7 +35,7 @@ FASTIFY.server.get('/ios/v1/startup/message', async (_, reply) => {
 		.header('Content-Type', 'application/json; charset=utf-8')
 		.send([
 			{
-				build_max: 100,
+				build_max: 106,
 				build_min: null,
 				message_id: 'IOS-20260128',
 				message_url: 'https://pcgi.tmlmobilidade.pt/app-navegante-ios/startup/20260127',
